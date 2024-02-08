@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Book Rack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head> 
+  <body>
+
+<div class="navbar">
+    <h1>Book Rack</h1>
+</div>
+
+<div class="container">
+    <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert T. Kiyosaki</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto reprehenderit eveniet sapiente illum vel facere nam ut non. Nulla eaque voluptate unde architecto, quasi itaque enim at necessitatibus quisquam?</p>
+            <button onclick="deletebook(event)">Delete</button>
+    </div>
+
+</div>
+
+<div class="popup-overlay"></div>
+<div class="popup-box">
+    <h2>Add Book</h2>
+    <form>
+        <input type="text" placeholder="Book Title" id="book-title-input">
+        <input type="text" placeholder="Book Author" id="book-author-input">
+        <textarea placeholder="Short Description (max 50 words)" id="book-description-input" maxlength="255" required></textarea>
+        <button id="add-book">Add</button>
+        <button id="cancel-popup">Cancel</button>
+
+    </form>
+
+</div>
+
+    <button class="add-button" id="add-popup-buttton"> +  </button>
+    <script src="script.js"></script>
+  
+</body>
+</html>
+
